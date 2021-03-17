@@ -31,10 +31,12 @@ class Blank extends React.Component {
   render = () => (
     <View style={styles.View_1}>
       <View style={styles.View_5}>
-        <View>
+        <View style={styles.View_8}>
           <Icon name="star" />
         </View>
-        <View style={styles.View_61} />
+        <View style={styles.View_61}>
+          <Text>Sample text content</Text>
+        </View>
       </View>
     </View>
   )
@@ -54,12 +56,18 @@ const styles = StyleSheet.create({
     width: "100%",
     alignSelf: "center",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignContent: "flex-start"
   },
-  View_8: {},
+  View_8: { width: "10%" },
   Icon_60: {},
-  View_61: { alignSelf: "center", alignItems: "center" }
+  View_61: {
+    width: "80%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  Text_64: {}
 })
 
 const mapStateToProps = state => {
