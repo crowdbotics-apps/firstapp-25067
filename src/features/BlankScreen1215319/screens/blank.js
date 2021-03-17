@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "90%",
     marginBottom: "0%",
+    alignSelf: "center",
     color: "#f6f6f6",
     alignItems: "center",
     alignContent: "flex-start",
