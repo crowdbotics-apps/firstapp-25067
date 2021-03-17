@@ -45,13 +45,7 @@ class Blank extends React.Component {
       </View>
       <View style={styles.View_76}>
         <View style={styles.View_77} />
-        <ImageBackground
-          source={{
-            uri:
-              "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/cb6aa45c-c0ae-4edf-81da-74d82522051f.jpg"
-          }}
-          style={styles.ImageBackground_78}
-        >
+        <ImageBackground style={styles.ImageBackground_78}>
           <Button
             title="Les veaux"
             color="#ffffff"
@@ -75,15 +69,15 @@ class Blank extends React.Component {
       </View>
       <View style={styles.View_95}>
         <View style={styles.View_96} />
-        <View style={styles.View_97}>
-          <Image
-            source={{
-              uri:
-                "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/8192af44-1c5b-400f-8794-39ffe4d9ae8c.jpg"
-            }}
-            style={styles.Image_103}
-          />
-        </View>
+        <ImageBackground
+          source={{
+            uri:
+              "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/8192af44-1c5b-400f-8794-39ffe4d9ae8c.jpg"
+          }}
+          style={styles.ImageBackground_97}
+        >
+          <Button title="Press me!" onPress={() => alert("Pressed!")} />
+        </ImageBackground>
         <View style={styles.View_98} />
         <View style={styles.View_99} />
         <View style={styles.View_100} />
@@ -212,29 +206,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center"
   },
-  View_97: {
+  ImageBackground_97: {
     width: "37%",
-    alignSelf: "center",
-    justifyContent: "center",
+    height: "100%",
+    justifyContent: "flex-end",
     alignItems: "center",
-    alignContent: "center"
+    alignContent: "flex-end",
+    borderColor: "#e2",
+    backgroundSize: "cover"
   },
-  Image_103: {
-    width: 100,
-    height: 100,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: 10,
-    marginBottom: 10,
-    alignSelf: "center",
-    borderColor: "#e2e2e2",
-    borderWidth: 1,
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    borderRadius: 5
-  },
+  Button_114: {},
   View_98: {
     width: "6%",
     alignSelf: "center",
