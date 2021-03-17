@@ -48,7 +48,13 @@ const styles = StyleSheet.create({
     alignContent: "flex-start",
     borderColor: "#4bb592"
   },
-  View_5: { flexDirection: "row" },
+  View_5: {
+    width: "100%",
+    alignSelf: "center",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignContent: "center"
+  },
   View_6: {},
   View_7: {}
 })
