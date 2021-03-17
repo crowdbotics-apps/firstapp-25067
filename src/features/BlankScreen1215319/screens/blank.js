@@ -35,7 +35,7 @@ class Blank extends React.Component {
           <Icon name="star" />
         </View>
         <View style={styles.View_61}>
-          <Text>Sample text content</Text>
+          <Text>Accueil</Text>
         </View>
       </View>
     </View>
@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
     width: "100%",
     alignSelf: "center",
     flexDirection: "row",
-    justifyContent: "flex-start",
     alignContent: "flex-start"
   },
   View_8: { width: "10%" },
