@@ -43,6 +43,29 @@ class Blank extends React.Component {
           <Text>Welcome on board !</Text>
         </View>
       </View>
+      <View style={styles.View_76}>
+        <View style={styles.View_77} />
+        <View style={styles.View_78}>
+          <Image
+            source={{
+              uri:
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/cb6aa45c-c0ae-4edf-81da-74d82522051f.jpg"
+            }}
+            style={styles.Image_86}
+          />
+        </View>
+        <View style={styles.View_79} />
+        <View style={styles.View_80}>
+          <Image
+            source={{
+              uri:
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/024adc60-6a90-4e4b-8ce8-eb8775458bc7.jpg"
+            }}
+            style={styles.Image_91}
+          />
+        </View>
+        <View style={styles.View_81} />
+      </View>
     </View>
   )
 }
@@ -92,7 +115,79 @@ const styles = StyleSheet.create({
     alignContent: "center"
   },
   View_69: { width: "80%", alignItems: "center" },
-  Text_72: {}
+  Text_72: {},
+  View_76: {
+    width: "100%",
+    paddingTop: 10,
+    alignSelf: "center",
+    flexDirection: "row"
+  },
+  View_77: {
+    width: "10%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_78: {
+    width: "37%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  Image_86: {
+    width: 100,
+    height: 100,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 10,
+    marginBottom: 10,
+    alignSelf: "center",
+    borderColor: "#e2e2e2",
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderRadius: 5
+  },
+  View_79: {
+    width: "6%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_80: {
+    width: "37%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  Image_91: {
+    width: 100,
+    height: 100,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 10,
+    marginBottom: 10,
+    borderColor: "#e2e2e2",
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderRadius: 5
+  },
+  View_81: {
+    width: "10%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  }
 })
 
 const mapStateToProps = state => {
