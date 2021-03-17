@@ -31,8 +31,8 @@ class Blank extends React.Component {
   render = () => (
     <View style={styles.View_1}>
       <View style={styles.View_5}>
-        <View />
-        <View />
+        <View style={styles.View_6} />
+        <View style={styles.View_7} />
       </View>
     </View>
   )
@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignContent: "center"
   },
-  View_6: {},
-  View_7: {}
+  View_6: { alignItems: "center" },
+  View_7: { alignItems: "center" }
 })
 
 const mapStateToProps = state => {
