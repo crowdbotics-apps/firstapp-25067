@@ -45,15 +45,22 @@ class Blank extends React.Component {
       </View>
       <View style={styles.View_76}>
         <View style={styles.View_77} />
-        <View style={styles.View_78}>
-          <Image
-            source={{
-              uri:
-                "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/cb6aa45c-c0ae-4edf-81da-74d82522051f.jpg"
-            }}
-            style={styles.Image_86}
+        <ImageBackground
+          source={{
+            uri:
+              "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/cb6aa45c-c0ae-4edf-81da-74d82522051f.jpg"
+          }}
+          style={styles.ImageBackground_78}
+        >
+          <Button
+            title="Les veaux"
+            color="#ffffff"
+            style={styles.Button_111}
+            onPress={() =>
+              this.props.navigation.navigate("CopyofBlankScreen1215321")
+            }
           />
-        </View>
+        </ImageBackground>
         <View style={styles.View_79} />
         <View style={styles.View_80}>
           <Image
@@ -145,29 +152,22 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center"
   },
-  View_78: {
+  ImageBackground_78: {
     width: "37%",
-    alignSelf: "center",
-    justifyContent: "center",
+    height: "100%",
+    justifyContent: "flex-end",
     alignItems: "center",
-    alignContent: "center"
-  },
-  Image_86: {
-    width: 100,
-    height: 100,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: 10,
-    marginBottom: 10,
-    alignSelf: "center",
+    alignContent: "flex-end",
     borderColor: "#e2e2e2",
     borderWidth: 1,
     borderLeftWidth: 1,
     borderRightWidth: 1,
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    borderRadius: 5
+    borderRadius: 5,
+    backgroundSize: "contain"
   },
+  Button_111: { height: 0 },
   View_79: {
     width: "6%",
     alignSelf: "center",
