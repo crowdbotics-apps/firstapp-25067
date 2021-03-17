@@ -21,13 +21,21 @@ import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 class Blank extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {}
   }
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
 
-  render = () => <View style={styles.View_1} />
+  render = () => (
+    <View style={styles.View_1}>
+      <View style={styles.View_5}>
+        <View />
+        <View />
+      </View>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -39,12 +47,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "flex-start",
     borderColor: "#4bb592"
-  }
+  },
+  View_5: { flexDirection: "row" },
+  View_6: {},
+  View_7: {}
 })
+
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
