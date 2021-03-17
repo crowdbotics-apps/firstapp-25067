@@ -45,42 +45,36 @@ class Blank extends React.Component {
       </View>
       <View style={styles.View_76}>
         <View style={styles.View_77} />
-        <ImageBackground style={styles.ImageBackground_78}>
-          <Button
-            title="Les veaux"
-            color="#ffffff"
-            style={styles.Button_111}
-            onPress={() =>
-              this.props.navigation.navigate("CopyofBlankScreen1215321")
-            }
-          />
-        </ImageBackground>
-        <View style={styles.View_79} />
-        <View style={styles.View_80}>
-          <Image
-            source={{
-              uri:
-                "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/024adc60-6a90-4e4b-8ce8-eb8775458bc7.jpg"
-            }}
-            style={styles.Image_91}
-          />
-        </View>
-        <View style={styles.View_81} />
-      </View>
-      <View style={styles.View_95}>
-        <View style={styles.View_96} />
         <ImageBackground
           source={{
             uri:
-              "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/8192af44-1c5b-400f-8794-39ffe4d9ae8c.jpg"
+              "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/cb6aa45c-c0ae-4edf-81da-74d82522051f.jpg"
           }}
-          style={styles.ImageBackground_97}
+          style={styles.ImageBackground_78}
         >
-          <Button title="Press me!" onPress={() => alert("Pressed!")} />
+          <Button
+            title="Les veaux"
+            color="#ffffff"
+            style={styles.Button_83}
+            onPress={() => alert("Pressed!")}
+          />
         </ImageBackground>
-        <View style={styles.View_98} />
-        <View style={styles.View_99} />
-        <View style={styles.View_100} />
+        <View style={styles.View_79} />
+        <ImageBackground
+          source={{
+            uri:
+              "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/024adc60-6a90-4e4b-8ce8-eb8775458bc7.jpg"
+          }}
+          style={styles.ImageBackground_80}
+        >
+          <Button
+            title="Les vaches"
+            color="#ffffff"
+            style={styles.Button_86}
+            onPress={() => alert("Pressed!")}
+          />
+        </ImageBackground>
+        <View style={styles.View_81} />
       </View>
     </View>
   )
@@ -133,25 +127,21 @@ const styles = StyleSheet.create({
   },
   View_69: { width: "80%", alignItems: "center" },
   Text_72: {},
-  View_76: {
-    width: "100%",
-    paddingTop: 10,
-    alignSelf: "center",
-    flexDirection: "row"
-  },
+  View_76: { width: "100%", paddingTop: 0, flexDirection: "row" },
   View_77: {
     width: "10%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    alignContent: "stretch"
   },
   ImageBackground_78: {
     width: "37%",
-    height: "100%",
+    height: 110,
+    overflow: "hidden",
+    alignSelf: "center",
     justifyContent: "flex-end",
     alignItems: "center",
-    alignContent: "flex-end",
+    alignContent: "stretch",
     borderColor: "#e2e2e2",
     borderWidth: 1,
     borderLeftWidth: 1,
@@ -159,83 +149,38 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderRadius: 5,
-    backgroundSize: "contain"
+    backgroundSize: "cover"
   },
-  Button_111: { height: 0 },
+  Button_83: { marginBottom: 0, overflow: "hidden", alignSelf: "flex-end" },
   View_79: {
     width: "6%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    alignContent: "stretch"
   },
-  View_80: {
+  ImageBackground_80: {
     width: "37%",
+    height: 110,
+    overflow: "hidden",
     alignSelf: "center",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
-    alignContent: "center"
-  },
-  Image_91: {
-    width: 100,
-    height: 100,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: 10,
-    marginBottom: 10,
+    alignContent: "stretch",
     borderColor: "#e2e2e2",
     borderWidth: 1,
     borderLeftWidth: 1,
     borderRightWidth: 1,
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    borderRadius: 5
-  },
-  View_81: {
-    width: "10%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
-  },
-  View_95: { width: "100%", alignSelf: "center", flexDirection: "row" },
-  View_96: {
-    width: "10%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
-  },
-  ImageBackground_97: {
-    width: "37%",
-    height: "100%",
-    justifyContent: "flex-end",
-    alignItems: "center",
-    alignContent: "flex-end",
-    borderColor: "#e2",
+    borderRadius: 5,
     backgroundSize: "cover"
   },
-  Button_114: {},
-  View_98: {
-    width: "6%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
-  },
-  View_99: {
-    width: "37%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
-  },
-  View_100: {
+  Button_86: { marginBottom: 0, overflow: "hidden", alignSelf: "flex-end" },
+  View_81: {
     width: "10%",
-    alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    alignContent: "stretch"
   }
 })
 
