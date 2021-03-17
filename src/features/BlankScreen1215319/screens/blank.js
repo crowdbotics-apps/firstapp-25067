@@ -66,6 +66,13 @@ class Blank extends React.Component {
         </View>
         <View style={styles.View_81} />
       </View>
+      <View style={styles.View_95}>
+        <View style={styles.View_96} />
+        <View style={styles.View_97} />
+        <View style={styles.View_98} />
+        <View style={styles.View_99} />
+        <View style={styles.View_100} />
+      </View>
     </View>
   )
 }
@@ -182,6 +189,42 @@ const styles = StyleSheet.create({
     borderRadius: 5
   },
   View_81: {
+    width: "10%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_95: { width: "100%", alignSelf: "center", flexDirection: "row" },
+  View_96: {
+    width: "10%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_97: {
+    width: "37%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_98: {
+    width: "6%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_99: {
+    width: "37%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_100: {
     width: "10%",
     alignSelf: "center",
     justifyContent: "center",
