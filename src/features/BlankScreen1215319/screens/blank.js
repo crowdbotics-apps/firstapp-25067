@@ -38,6 +38,11 @@ class Blank extends React.Component {
           <Text>Accueil</Text>
         </View>
       </View>
+      <View style={styles.View_68}>
+        <View style={styles.View_69}>
+          <Text>Welcome on board !</Text>
+        </View>
+      </View>
     </View>
   )
 }
@@ -68,7 +73,7 @@ const styles = StyleSheet.create({
   },
   Icon_60: {},
   View_61: {
-    width: "75%",
+    width: "70%",
     height: "55%",
     paddingLeft: "0%",
     overflow: "hidden",
@@ -77,7 +82,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center"
   },
-  Text_64: {}
+  Text_64: {},
+  View_68: {
+    width: "100%",
+    alignSelf: "center",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  View_69: { width: "80%", alignItems: "center" },
+  Text_72: {}
 })
 
 const mapStateToProps = state => {
