@@ -56,15 +56,26 @@ const styles = StyleSheet.create({
     width: "100%",
     alignSelf: "center",
     flexDirection: "row",
-    alignContent: "flex-start"
+    alignContent: "center"
   },
-  View_8: { width: "10%" },
+  View_8: {
+    width: "15%",
+    height: "55%",
+    overflow: "hidden",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
   Icon_60: {},
   View_61: {
-    width: "80%",
+    width: "75%",
+    height: "55%",
+    paddingLeft: "0%",
+    overflow: "hidden",
     alignSelf: "center",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    alignContent: "center"
   },
   Text_64: {}
 })
