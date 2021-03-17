@@ -68,7 +68,15 @@ class Blank extends React.Component {
       </View>
       <View style={styles.View_95}>
         <View style={styles.View_96} />
-        <View style={styles.View_97} />
+        <View style={styles.View_97}>
+          <Image
+            source={{
+              uri:
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/25067/8192af44-1c5b-400f-8794-39ffe4d9ae8c.jpg"
+            }}
+            style={styles.Image_103}
+          />
+        </View>
         <View style={styles.View_98} />
         <View style={styles.View_99} />
         <View style={styles.View_100} />
@@ -209,6 +217,22 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center"
+  },
+  Image_103: {
+    width: 100,
+    height: 100,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 10,
+    marginBottom: 10,
+    alignSelf: "center",
+    borderColor: "#e2e2e2",
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderRadius: 5
   },
   View_98: {
     width: "6%",
